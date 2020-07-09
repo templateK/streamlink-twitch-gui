@@ -7,7 +7,12 @@ module.exports = function( grunt ) {
 
 	grunt.registerMultiTask( task, descr, function() {
 		const done = this.async();
-		const options = this.options();
+		let options = this.options();
+            options.flavor = 'sdk';
+            options.versions = '0.46.4';
+            console.log("Leeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+            console.log(options);
+            console.log("Leeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
 
 		const nw = new NwBuilder( options );
 
