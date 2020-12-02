@@ -15,11 +15,7 @@
 		"client-id": "phiay4sq36lfv9zu7cbqwz2ndnesfd8",
 		"redirect-uri": "http://localhost:{server-port}/redirect",
 		"scope": [
-			"user_read",
-			"user_blocks_read",
-			"user_blocks_edit",
 			"user_follows_edit",
-			"user_subscriptions",
 			"chat_login"
 		]
 	}
