@@ -84,10 +84,10 @@ module.exports = function( grunt ) {
 						grunt.log.debug( `Connected to ${options.host}:${options.port}` );
 
 						// set up and start QUnit
-						await cdpQUnit( grunt, options, cdp );
-						if ( isCoverage ) {
-							await cdpCoverage( grunt, options, cdp );
-						}
+						// await cdpQUnit( grunt, options, cdp );
+						// if ( isCoverage ) {
+						// 	await cdpCoverage( grunt, options, cdp );
+						// }
 					})
 					// resolve on a successful test run
 					.then( resolve, reject );
